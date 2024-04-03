@@ -1,0 +1,640 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px #e7e7e7;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.customPadding {
+  padding: 1rem 2rem;
+}
+.logo {
+  border: 2px solid black;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  background-color: #fff;
+}
+.logo span {
+  background-color: orange;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  /* height: 200px; */
+}
+
+.links {
+}
+.links a {
+  padding: 0 0.5rem;
+}
+.toggleNav {
+  display: none;
+}
+/* ______recipe css ___  */
+
+.recipeCard {
+  width: 15rem;
+  padding: 0.4rem;
+  border-radius: 17px;
+  box-shadow: 1px 1px 10px #b7b7b7;
+  overflow: hidden;
+}
+.recipeCard .img img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  scale: 109%;
+  transition: 0.5s;
+  /* height: 100px; */
+}
+
+.recipeCard img:hover {
+  scale: 115%;
+}
+.recipeCard .data {
+}
+.recipeCard .data h3 {
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  text-align: justify;
+  font-weight: bold;
+}
+.recipeCard .data p {
+  text-align: justify;
+  line-height: 1.3rem;
+}
+.recipeCard .data .btn {
+  text-align: right;
+  color: red;
+  margin-right: 4px;
+}
+.recipeCard .data .btn svg {
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+
+.recipes {
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ______auth css ___  */
+
+.authForm {
+  margin: auto;
+  width: 60%;
+  padding-bottom: 2rem;
+}
+
+form .formInputs {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.formInputs input,
+textarea {
+  padding: 0.6rem 0.6rem;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  width: 100%;
+}
+textarea {
+  height: 4rem;
+}
+.bigText {
+  height: 14rem;
+}
+
+.authForm form button {
+  position: relative;
+  float: right;
+  padding: 0.6rem 1rem;
+  outline: none;
+  border: none;
+  border: 1px solid orange;
+  color: orange;
+  font-weight: 800;
+  background: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.authForm form button:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* _____select option css */
+.userOptions {
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0.4rem;
+}
+.userOptions option {
+  padding: 0.3rem;
+}
+
+/* myProfile css */
+
+.myProfile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 22rem;
+}
+.myProfileb {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+  padding: 1rem 2rem;
+  box-shadow: 1px 1px 10px #dcdcdc;
+}
+.myProfile .img img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  object-fit: cover;
+  /* border: 3px solid #000; */
+  box-shadow: 1px 1px 10px #949494;
+}
+.myProfile .data h3 {
+  padding: 0.4rem 0;
+  font-size: 1.4rem;
+}
+.myProfile .data h4 {
+  padding: 0.4rem 0;
+  font-size: 1.1rem;
+}
+.myProfile .data p {
+  padding-top: 0.4rem;
+}
+
+/* single recipe css */
+
+.singleRecipe h3,
+h2 {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.4rem 0;
+  transition: 0.5s;
+}
+.singleRecipe h3:hover,
+h2:hover {
+  color: orange;
+}
+.recipeUl li {
+  /* list-style: none; */
+}
+
+.paraSizing {
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.imgContent {
+  /* width: 50%; */
+  /* border: 1px solid red; */
+}
+.spImg {
+  /* border: 1px solid #000; */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #dbdbdb;
+  margin: 1rem 0;
+  /* border: 1px solid red; */
+}
+.ingredients {
+  width: 50%;
+}
+.recipeSpImg {
+  /* padding: 1rem 0; */
+  border-radius: 15px;
+  max-width: 100%;
+  max-height: 30rem;
+  transition: 0.5s;
+  scale: 105%;
+}
+
+.recipeSpImg:hover {
+  scale: 110%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 4rem;
+}
+/* comment box */
+.comments {
+  margin: 1rem 0;
+}
+.commentBox,
+.userComments {
+  width: 50%;
+  /* border: 1px solid #000; */
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.commentBox input {
+  padding: 0.4rem 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #000;
+  margin: 0.2rem 0;
+}
+.commentBox button {
+  width: 10rem;
+  outline: none;
+  border: 1px solid #000;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.commentBox button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.userSingleComment {
+  /* border: 1px solid #000; */
+  padding: 1rem;
+  margin: 0.5rem 0;
+  box-shadow: 1px 1px 10px #dbdbdb;
+}
+
+/* pageNotFound */
+.pageNotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 80vh;
+  gap: 1rem;
+}
+.pageNotFound h1 {
+  font-size: 4rem;
+}
+/* home */
+
+.mainContainer {
+  background: url("/imgs/foodhub-slider-main-food-v4.jpg");
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+}
+.fItem {
+  width: 50%;
+}
+.heroDetails h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.heroDetails p {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.heroDetails button,
+.heroBtn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: orange;
+  border: 1px solid orange;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  /* position: relative; */
+  z-index: 10;
+}
+.heroDetails button:hover,
+.heroBtn:hover {
+  background-color: orange;
+  color: #000;
+}
+
+.hdata {
+  text-align: center;
+  padding: 4rem 0;
+}
+.hdata h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hdata p {
+  color: gray;
+  padding: 0.6rem 0;
+}
+.recipesFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.categoryCard {
+  /* border: 1px solid red; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.categoryCard img {
+  width: 16rem;
+  transform: scale(100%);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.cSp img {
+  width: 26rem;
+}
+.cSp h1 {
+  color: #fff;
+}
+.categoryCard:hover img {
+  transform: scale(110%);
+}
+.categoryCard h1 {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.newsLetter {
+  background-image: url("/imgs/call-to-action-v2.jpg");
+  width: 100%;
+  height: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 !important;
+  margin: 4rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.newsLetter .heroDetails {
+  width: 70%;
+}
+.newsLetter h1 {
+  font-size: 3rem;
+  /* background: red; */
+}
+.newsLetter p {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.4rem;
+}
+.textCenter {
+  text-align: center;
+}
+.heroDetails span {
+  color: orange;
+  font-weight: bold;
+}
+
+.popularRecipes {
+  padding-bottom: 4rem;
+}
+.mainCourse {
+  background-color: #f2f2f2;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+.pb-4 {
+  padding-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 3rem 2rem 2rem 2rem;
+  margin: 1rem 0;
+  box-shadow: 1px -10px 10px #ededed;
+  /* border: 1px solid red; */
+}
+.footer .flex {
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.rb {
+  width: 30%;
+  /* border: 1px solid red; */
+}
+.rb h1 {
+  margin: 2rem 0 1.6rem 0;
+  font-weight: bold;
+}
+.flink {
+  width: 60%;
+}
+.flink .item h3 {
+  padding: 0.4rem 0;
+}
+.rb .heroBtn {
+}
+
+@media screen and (max-width: 1040px) {
+  .heroDetails h1 {
+    font-size: 3rem;
+  }
+  .heroDetails p {
+    font-size: 1.8rem;
+  }
+  .spH p {
+    font-size: 1.2rem;
+  }
+  .imgContent {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .singleRes {
+    flex-direction: column;
+  }
+
+  .imgContent {
+    width: 70%;
+  }
+  .ingredients {
+    width: 70%;
+  }
+
+  .recipeSpImg {
+    max-width: 100%;
+    max-height: 30rem;
+  }
+  .commentBox,
+  .userComments {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .fItem {
+    width: 100%;
+  }
+  .spF {
+    flex-direction: column;
+    align-items: start;
+  }
+  .rb {
+    width: 100%;
+  }
+  .authForm {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .myProfile {
+    display: flex;
+  }
+  .myProfileb {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .myProfile .data h3 {
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+  }
+  .myProfile .data h4 {
+    padding: 0.4rem 0;
+    font-size: 1.1rem;
+  }
+  .myProfile .data p {
+    padding-top: 0.4rem;
+  }
+  .recipeSpImg {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 30rem;
+    transition: 0.5s;
+    scale: 105%;
+  }
+  .paraSizing {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header {
+    position: relative;
+  }
+  .links {
+    position: absolute;
+    top: 4.4rem;
+    left: -600px;
+    padding: 3rem 2rem;
+    backdrop-filter: blur(6px);
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 20;
+  }
+  .links a {
+    color: orange;
+    font-weight: bold;
+  }
+  .linkScale {
+    left: 0px;
+  }
+  .toggleNav {
+    display: block;
+  }
+  .userOptions {
+    color: orange;
+    font-weight: bold;
+  }
+  .imgContent {
+    width: 100%;
+  }
+  .ingredients {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .flink {
+    flex-wrap: wrap;
+  }
+  .commentBox button {
+    height: 2.4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .customPadding {
+    padding: 1rem 1rem;
+  }
+
+  .links {
+    padding: 1rem 1rem;
+  }
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .cSp img {
+    width: 12rem;
+  }
+  .categoryCard h1 {
+    font-size: 1.4rem;
+  }
+  .heroDetails h1 {
+    font-size: 2rem;
+  }
+  .heroDetails p {
+    font-size: 1.3rem;
+  }
+  .mainContainer {
+    height: 32rem;
+  }
+  .heroDetails button,
+  .heroBtn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+  }
+
+  .hdata h1 {
+    font-size: 2rem;
+  }
+  .spH {
+    width: 100%;
+  }
+  .heroDetails p {
+    font-size: 1rem;
+  }
+  .newsLetter {
+    height: 27rem;
+  }
+  .categoryCard img {
+    width: 15rem;
+  }
+}
