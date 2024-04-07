@@ -13,9 +13,7 @@ const MyRecipies = () => {
   const getMyRecipes = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_BURL}/api/v1/recipes/myRecipes/${
-          auth?.user?._id
-        }`
+        `https://recipblognodejs.onrender.com/api/v1/recipes/myRecipes/${auth?.user?._id}`
       );
       setMyRecipes(data.result);
     } catch (error) {}

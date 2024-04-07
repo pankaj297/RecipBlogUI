@@ -32,7 +32,7 @@ const Register = () => {
     userData.append("img", formData.img[0]);
     try {
       const result = await axios.post(
-        `${import.meta.env.VITE_BURL}/api/v1/users/createUser`,
+        `https://recipblognodejs.onrender.com/api/v1/users/createUser`,
         userData
       );
 

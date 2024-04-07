@@ -20,7 +20,7 @@ const UpdateRecipe = () => {
   const fetchRecipe = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_BURL}/api/v1/recipes/singleRecipe/${params.rId}`
+        `https://recipblognodejs.onrender.com/api/v1/recipes/singleRecipe/${params.rId}`
       );
 
       

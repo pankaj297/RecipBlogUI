@@ -17,9 +17,7 @@ const MyProfile = () => {
           <div className="img">
             {auth?.user?._id && (
               <img
-                src={`${import.meta.env.VITE_BURL}/api/v1/users/singleUserImg/${
-                  auth?.user?._id
-                }`}
+                src={`https://recipblognodejs.onrender.com/api/v1/users/singleUserImg/${auth?.user?._id}`}
                 alt=""
               />
             )}

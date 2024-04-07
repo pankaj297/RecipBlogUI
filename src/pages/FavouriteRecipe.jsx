@@ -10,9 +10,7 @@ const FavouriteRecipe = () => {
   const getFavourites = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_BURL}/api/v1/favouriteRecipes/getFavourite/${
-          auth?.user?._id
-        }`
+        `https://recipblognodejs.onrender.com/api/v1/favouriteRecipes/getFavourite/${auth?.user?._id}`
       ); 
       setFavouriteRecipes(data.favRecipes);
     } catch (error) { 

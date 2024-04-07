@@ -13,7 +13,7 @@ const Home = () => {
   const fetchRecipes = async () => {
     try {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_BURL}/api/v1/recipes/allRecipes`
+        `https://recipblognodejs.onrender.com/api/v1/recipes/allRecipes`
       );
       setRecipes(data.result.slice(1, 5));
     } catch (error) { 

@@ -30,7 +30,7 @@ const AddRecipe = () => {
 
     try {
       const result = await axios.post(
-        `${import.meta.env.VITE_BURL}/api/v1/recipes/addRecipe`,
+        `https://recipblognodejs.onrender.com/api/v1/recipes/addRecipe`,
         userData
       ); 
       if (result) {

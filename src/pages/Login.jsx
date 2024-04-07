@@ -26,8 +26,8 @@ const Login = () => {
 
         try {
             const result = await axios.post(
-                `${import.meta.env.VITE_BURL}/api/v1/users/loginUser`,
-                { email: formData.email, password: formData.password }
+              `https://recipblognodejs.onrender.com/api/v1/users/loginUser`,
+              { email: formData.email, password: formData.password }
             );
  
             if (result) {
